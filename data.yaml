@@ -30,7 +30,8 @@ services:
     depends_on:
       - webserver
     image: certbot/certbot
-    command: certonly --webroot --webroot-path=/var/www/html -d example.com
+   
+    command: certonly --webroot --webroot-path=/var/www/html -d talhayıldızz.com
     volumes:
       - './certs:/etc/letsencrypt'
     restart: always
